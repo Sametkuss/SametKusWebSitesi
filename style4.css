@@ -1,0 +1,337 @@
+/* Genel stiller */
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1b1b1b;
+    color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Sayfa içeriğini yatayda ortalar */
+}
+
+/* Header ve Navbar */
+header {
+    background-color: #333;
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%; /* Menü içeriğini sayfaya göre ortalar */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #f5f5f5;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+.logo {
+    height: 40px;
+}
+
+/* Gradient Background */
+.gradient-background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.3), rgba(169, 169, 169, 0.5));
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+    width: 100%;
+}
+
+.text_fade {
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    opacity: 0;
+    animation: fadeIn 3s forwards;
+}
+
+.text_fade a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.text_fade a:hover {
+    color: #4caf50;
+}
+
+/* Ana başlık bölümü */
+section {
+    padding: 50px 20px;
+    width: 100%;
+    max-width: 1000px; /* İçeriği belirli bir genişlikte tutar */
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+/* Yetenekler bölümü */
+.yetenekler {
+    display: grid;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.yetenekler div {
+    background-color: #444;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.yetenekler label {
+    display: block;
+    padding: 5px;
+    background-color: #555;
+}
+
+/* Progress bar */
+.progress-bar {
+    background-color: #4caf50; /* Normal yeşil renk */
+    height: 25px;
+    color: #fff;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Renk değişimi animasyonu */
+}
+
+/* Progress bar üzerine gelindiğinde renk değişimi */
+.progress-bar:hover {
+    background-color: #4caf50; /* Yeni renk */
+}
+
+/* Progress bar göründüğünde renk değişimi */
+.progress-bar.active {
+    background-color: #ff9800; /* Renk değişimi (örneğin turuncu) */
+}
+
+/* Yazıya gelindiğinde progress bar renk değişimi */
+.yetenekler div:hover .progress-bar {
+    background-color: #4caf50; /* Yazıya gelindiğinde değişen renk */
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.sosyal-medya a {
+    color: #f5f5f5;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.sosyal-medya a:hover {
+    color: #4caf50;
+}
+
+.copyright {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #888;
+}
+
+/* İletişim ikonları */
+#iletisim ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* İletişim ikonlarını ortalar */
+}
+
+#iletisim ul li {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+#iletisim ul li i {
+    margin-right: 10px;
+    font-size: 20px;
+    color: #4caf50;
+}
+
+#iletisim ul li i:hover {
+    color: #ff5722;
+}
+
+/* Animations */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Yatay çizgiler */
+hr {
+    border: none;
+    border-top: 2px solid white; /* Çizginin rengi ve kalınlığı */
+    margin: 30px 0; /* Üst ve alt boşluk */
+    width: 80%; /* Yatay çizginin genişliği */
+    opacity: 0.5; /* Çizginin şeffaflık seviyesi */
+}
+
+/* Sertifikalar bölümü stilleri */
+#sertifikalar {
+    padding: 50px 20px;
+    background-color: #1b1b1b; /* Arka plan rengini siyah yapıyoruz */
+    color: #fff; /* Yazı rengini beyaz yaparak kontrastı artırıyoruz */
+    text-align: center;
+}
+
+.sertifikalar {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Sertifikalar arasındaki boşluk */
+    flex-wrap: wrap; /* Mobil uyumluluk için satır geçişi */
+}
+
+.sertifika {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    width: 200px; /* Sertifikaların genişliği */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.sertifika:hover {
+    transform: translateY(-10px); /* Hover efekti: Sertifikayı biraz yukarı hareket ettir */
+}
+
+.sertifika img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.sertifika p {
+    margin-top: 10px;
+}
+
+.sertifika a {
+    text-decoration: none;
+    color: #4caf50;
+    font-weight: bold;
+}
+
+.sertifika a:hover {
+    color: #ff5722;
+}
+.cv-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 30px; /* Oval hale getirmek için yarıçap artırıldı */
+    font-weight: bold;
+    border: 2px solid #000000; /* Siyah kenarlık eklendi */
+    transition: background-color 0.3s;
+}
+
+.cv-button:hover {
+    background-color: #4caf50; /* Hover durumu için hafif gri ton */
+}
+.logo {
+    width: 150px; /* Logonuzun istediğiniz genişliği */
+    height: auto; /* Yüksekliği orantılı olarak ayarlamak için */
+    margin-right: 20px; /* Menü ile arayı açmak için */
+}
+/* Telefon numarası linkinin temel stili */
+.telefon-link {
+    text-decoration: none;  /* Çizgiyi kaldır */
+    color: inherit;  /* Varsayılan metin rengini al */
+    transition: color 0.3s ease;  /* Hover efekti için geçiş ekle */
+}
+
+/* Hover efekti */
+.telefon-link:hover {
+    color: #4caf50;  /* Hover durumunda renk değiştir */
+}
+
+.mail-link {
+    text-decoration: none;  /* Çizgiyi kaldır */
+    color: inherit;  /* Varsayılan metin rengini al */
+    transition: color 0.3s ease;  /* Hover efekti için geçiş ekle */
+}
+
+/* Hover efekti */
+.mail-link:hover {
+    color: #4caf50;  /* Hover durumunda renk değiştir */
+}
+
+
+body {
+    overflow-x: hidden; /* Yatay kaydırmayı engeller */
+}
+#sametKusText {
+    display: block;
+    font-size: 3em;
+    color: white;
+    text-align: center;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+    text-transform: uppercase; /* Yazıyı her zaman büyük yapar */
+}
+/* Yükleniyor göstergesinin stilini ayarlayalım */
+
+
+
