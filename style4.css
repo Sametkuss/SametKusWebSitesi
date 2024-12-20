@@ -1,4 +1,4 @@
-/* Genel stiller */
+
 body {
     font-family: 'Raleway', sans-serif;
     margin: 0;
@@ -7,10 +7,9 @@ body {
     color: #f5f5f5;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Sayfa içeriğini yatayda ortalar */
+    align-items: center;
 }
 
-/* Header ve Navbar */
 header {
     background-color: #333;
     padding: 15px;
@@ -23,7 +22,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%; /* Menü içeriğini sayfaya göre ortalar */
+    width: 80%; 
 }
 
 nav ul {
@@ -52,7 +51,6 @@ nav ul li a:hover {
     height: 40px;
 }
 
-/* Gradient Background */
 .gradient-background {
     display: flex;
     flex-direction: column;
@@ -83,18 +81,18 @@ nav ul li a:hover {
     color: #4caf50;
 }
 
-/* Ana başlık bölümü */
+
 section {
     padding: 50px 20px;
     width: 100%;
-    max-width: 1000px; /* İçeriği belirli bir genişlikte tutar */
+    max-width: 1000px; 
 }
 
 h1, h2 {
     text-align: center;
 }
 
-/* Yetenekler bölümü */
+
 .yetenekler {
     display: grid;
     gap: 15px;
@@ -115,33 +113,33 @@ h1, h2 {
     background-color: #555;
 }
 
-/* Progress bar */
+
 .progress-bar {
-    background-color: #4caf50; /* Normal yeşil renk */
+    background-color: #4caf50; 
     height: 25px;
     color: #fff;
     text-align: center;
     line-height: 25px;
     border-radius: 5px;
-    transition: background-color 0.3s ease; /* Renk değişimi animasyonu */
+    transition: background-color 0.3s ease; 
 }
 
-/* Progress bar üzerine gelindiğinde renk değişimi */
+
 .progress-bar:hover {
-    background-color: #4caf50; /* Yeni renk */
+    background-color: #4caf50; 
 }
 
-/* Progress bar göründüğünde renk değişimi */
+
 .progress-bar.active {
-    background-color: #ff9800; /* Renk değişimi (örneğin turuncu) */
+    background-color: #ff9800; 
 }
 
-/* Yazıya gelindiğinde progress bar renk değişimi */
+
 .yetenekler div:hover .progress-bar {
-    background-color: #4caf50; /* Yazıya gelindiğinde değişen renk */
+    background-color: #4caf50; 
 }
 
-/* Footer */
+
 footer {
     background-color: #333;
     text-align: center;
@@ -168,7 +166,7 @@ footer {
     color: #888;
 }
 
-/* İletişim ikonları */
+
 #iletisim ul {
     list-style-type: none;
     padding: 0;
@@ -176,7 +174,7 @@ footer {
     font-size: 16px;
     display: flex;
     flex-direction: column;
-    align-items: center; /* İletişim ikonlarını ortalar */
+    align-items: center; 
 }
 
 #iletisim ul li {
@@ -195,7 +193,7 @@ footer {
     color: #ff5722;
 }
 
-/* Animations */
+
 @keyframes gradientAnimation {
     0% {
         background-position: 0% 50%;
@@ -217,28 +215,28 @@ footer {
     }
 }
 
-/* Yatay çizgiler */
+
 hr {
     border: none;
-    border-top: 2px solid white; /* Çizginin rengi ve kalınlığı */
-    margin: 30px 0; /* Üst ve alt boşluk */
-    width: 80%; /* Yatay çizginin genişliği */
-    opacity: 0.5; /* Çizginin şeffaflık seviyesi */
+    border-top: 2px solid white; 
+    margin: 30px 0; 
+    width: 80%; 
+    opacity: 0.5; 
 }
 
-/* Sertifikalar bölümü stilleri */
+
 #sertifikalar {
     padding: 50px 20px;
-    background-color: #1b1b1b; /* Arka plan rengini siyah yapıyoruz */
-    color: #fff; /* Yazı rengini beyaz yaparak kontrastı artırıyoruz */
+    background-color: #1b1b1b; 
+    color: #fff; 
     text-align: center;
 }
 
 .sertifikalar {
     display: flex;
     justify-content: center;
-    gap: 20px; /* Sertifikalar arasındaki boşluk */
-    flex-wrap: wrap; /* Mobil uyumluluk için satır geçişi */
+    gap: 20px; 
+    flex-wrap: wrap; 
 }
 
 .sertifika {
@@ -247,13 +245,13 @@ hr {
     border-radius: 5px;
     padding: 20px;
     text-align: center;
-    width: 200px; /* Sertifikaların genişliği */
+    width: 200px; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
 
 .sertifika:hover {
-    transform: translateY(-10px); /* Hover efekti: Sertifikayı biraz yukarı hareket ettir */
+    transform: translateY(-10px); 
 }
 
 .sertifika img {
@@ -281,46 +279,46 @@ hr {
     background-color: #ffffff;
     color: #000000;
     text-decoration: none;
-    border-radius: 30px; /* Oval hale getirmek için yarıçap artırıldı */
+    border-radius: 30px; 
     font-weight: bold;
-    border: 2px solid #000000; /* Siyah kenarlık eklendi */
+    border: 2px solid #000000; 
     transition: background-color 0.3s;
 }
 
 .cv-button:hover {
-    background-color: #4caf50; /* Hover durumu için hafif gri ton */
+    background-color: #4caf50; 
 }
 .logo {
-    width: 150px; /* Logonuzun istediğiniz genişliği */
-    height: auto; /* Yüksekliği orantılı olarak ayarlamak için */
-    margin-right: 20px; /* Menü ile arayı açmak için */
-}
-/* Telefon numarası linkinin temel stili */
-.telefon-link {
-    text-decoration: none;  /* Çizgiyi kaldır */
-    color: inherit;  /* Varsayılan metin rengini al */
-    transition: color 0.3s ease;  /* Hover efekti için geçiş ekle */
+    width: 150px; 
+    height: auto; 
+    margin-right: 20px; 
 }
 
-/* Hover efekti */
+.telefon-link {
+    text-decoration: none;  
+    color: inherit;  
+    transition: color 0.3s ease;  
+}
+
+
 .telefon-link:hover {
-    color: #4caf50;  /* Hover durumunda renk değiştir */
+    color: #4caf50;  
 }
 
 .mail-link {
-    text-decoration: none;  /* Çizgiyi kaldır */
-    color: inherit;  /* Varsayılan metin rengini al */
-    transition: color 0.3s ease;  /* Hover efekti için geçiş ekle */
+    text-decoration: none;  
+    color: inherit;  
+    transition: color 0.3s ease;  
 }
 
-/* Hover efekti */
+
 .mail-link:hover {
-    color: #4caf50;  /* Hover durumunda renk değiştir */
+    color: #4caf50;  
 }
 
 
 body {
-    overflow-x: hidden; /* Yatay kaydırmayı engeller */
+    overflow-x: hidden; 
 }
 #sametKusText {
     display: block;
@@ -329,9 +327,9 @@ body {
     text-align: center;
     opacity: 1;
     transition: opacity 1s ease-in-out;
-    text-transform: uppercase; /* Yazıyı her zaman büyük yapar */
+    text-transform: uppercase; 
 }
-/* Yükleniyor göstergesinin stilini ayarlayalım */
+
 
 
 
